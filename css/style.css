@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+section:hover button {
+  font-size: 23px;
+}
+
+section:hover ~ h1 {
+  background: #f7ff00;
+  background: -webkit-gradient(linear, left top, right top, from(#db36a4), to(#f7ff00));
+  background: linear-gradient(to right, #db36a4, #f7ff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section:hover .top {
+  opacity: 1;
+  -webkit-animation: spin1 1.5s linear infinite;
+          animation: spin1 1.5s linear infinite;
+}
+
+section:hover .bottom {
+  opacity: 1;
+  -webkit-animation: spin2 1.5s linear infinite;
+          animation: spin2 1.5s linear infinite;
+}
+
+section .outer-circle span {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#14ffe9), color-stop(#ffeb3b), to(#ff00e0));
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: font 1s;
+  transition: font 1s;
+}
+
+section button span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+  background: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+h1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#333));
+  background: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 50px;
+  color: #f2f2f2;
+}
+
+@-webkit-keyframes spin1 {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(16px);
+            filter: hue-rotate(0deg) blur(16px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(16px);
+            filter: hue-rotate(360deg) blur(16px);
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(16px);
+            filter: hue-rotate(0deg) blur(16px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(16px);
+            filter: hue-rotate(360deg) blur(16px);
+  }
+}
+
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(1px);
+            filter: hue-rotate(0deg) blur(1px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(1px);
+            filter: hue-rotate(360deg) blur(1px);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    -webkit-filter: hue-rotate(0deg) blur(1px);
+            filter: hue-rotate(0deg) blur(1px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(1px);
+            filter: hue-rotate(360deg) blur(1px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
